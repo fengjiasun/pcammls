@@ -2092,9 +2092,9 @@ bool PercipioSDK::DeviceStreamDoUndistortion(const TY_CAMERA_CALIB_INFO& calib_d
     TY_PIXEL_FORMAT_DEPTH16,
     TY_PIXEL_FORMAT_MONO16,
     TY_PIXEL_FORMAT_RGB,
-    TY_PIXEL_FORMAT_BGR,
-    TY_PIXEL_FORMAT_RGB48,
-    TY_PIXEL_FORMAT_BGR48
+    TY_PIXEL_FORMAT_BGR
+    // TY_PIXEL_FORMAT_RGB48,
+    // TY_PIXEL_FORMAT_BGR48
   };
   for(size_t i = 0; i < sizeof(fmt_support_list) / sizeof(int); i++) {
     if(src.pixelFormat == fmt_support_list[i]) {
